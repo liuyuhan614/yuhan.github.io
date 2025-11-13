@@ -1,59 +1,215 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>贾芬的学术主页</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘于涵 - 个人学术主页</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 导航条 -->
-  <nav>
-    <ul>
-      <li><a href="#about">关于我</a></li>
-      <li><a href="#research">研究方向</a></li>
-      <li><a href="#projects">项目展示</a></li>
-      <li><a href="#knowledge-graph">知识图谱</a></li>
-      <li><a href="#contact">联系我</a></li>
-    </ul>
-  </nav>
+    <!-- 导航条 -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">刘于涵</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">个人信息</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">学术成果</a></li>
+                <li class="nav-item"><a href="#knowledge-graph" class="nav-link">医学影像知识图谱</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">联系方式</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- 关于我 -->
-  <section id="about">
-    <h1>欢迎来到我的学术主页</h1>
-    <img src="images/me.jpg" alt="个人照片" class="profile">
-    <p>你好，我是贾芬，目前从事医学影像与人工智能研究。</p>
-  </section>
+    <!-- 首页 -->
+    <section id="home" class="section">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>刘于涵</h1>
+                <p>医学专业本科生 | 科研爱好者</p>
+                <p>致力于医学影像与临床研究</p>
+                <button class="cta-button" onclick="scrollToSection('about')">了解更多</button>
+            </div>
+            <div class="home-image">
+                <!-- 请将您的照片放在项目根目录并命名为photo.jpg -->
+                <img src="photo.jpg" alt="刘于涵的个人照片" id="personal-photo">
+            </div>
+        </div>
+    </section>
 
-  <!-- 研究方向 -->
-  <section id="research">
-    <h2>研究方向</h2>
-    <ul>
-      <li>超声影像分析</li>
-      <li>磁共振成像（MRI）处理</li>
-      <li>医学知识图谱构建</li>
-    </ul>
-  </section>
+    <!-- 个人信息 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">个人信息</h2>
+            <div class="about-content">
+                <div class="info-card">
+                    <h3>基本信息</h3>
+                    <ul>
+                        <li><strong>姓名：</strong>刘于涵</li>
+                        <li><strong>性别：</strong>女</li>
+                        <li><strong>民族：</strong>汉</li>
+                        <li><strong>政治面貌：</strong>共青团员</li>
+                        <li><strong>籍贯：</strong>河北保定</li>
+                        <li><strong>学历：</strong>本科在读</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>联系方式</h3>
+                    <ul>
+                        <li><strong>电话：</strong>15128991361</li>
+                        <li><strong>邮箱：</strong>15128991361@163.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- 项目展示 -->
-  <section id="projects">
-    <h2>项目展示</h2>
-    <div id="project-container"></div>
-  </section>
+    <!-- 学术成果 -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">学术成果</h2>
+            <div class="achievements-content">
+                <div class="achievement-category">
+                    <h3>专业课成绩</h3>
+                    <div class="progress-bars">
+                        <div class="progress-item">
+                            <span>免疫学</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="94.1"></div>
+                            </div>
+                            <span class="progress-value">94.1</span>
+                        </div>
+                        <div class="progress-item">
+                            <span>临床医学整合</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="89.5"></div>
+                            </div>
+                            <span class="progress-value">89.5</span>
+                        </div>
+                        <div class="progress-item">
+                            <span>局部解剖学</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="94.2"></div>
+                            </div>
+                            <span class="progress-value">94.2</span>
+                        </div>
+                        <div class="progress-item">
+                            <span>系统解剖学</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="96.4"></div>
+                            </div>
+                            <span class="progress-value">96.4</span>
+                        </div>
+                        <div class="progress-item">
+                            <span>医学统计学</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="91.6"></div>
+                            </div>
+                            <span class="progress-value">91.6</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="achievement-category">
+                    <h3>荣誉证书</h3>
+                    <ul class="awards-list">
+                        <li>校级三等奖学金</li>
+                        <li>校级二等奖学金</li>
+                        <li>天津市大学生化学竞赛三等奖</li>
+                        <li>第八届全国英语大学生科研英语演讲大赛优胜奖</li>
+                    </ul>
+                </div>
+                
+                <div class="achievement-category">
+                    <h3>科研竞赛</h3>
+                    <ul class="research-list">
+                        <li>全国大学生创新竞赛校级三等奖</li>
+                        <li>医创赛校级三等奖</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- 医学影像知识图谱 -->
-  <section id="knowledge-graph">
-    <h2>医学影像知识图谱</h2>
-    <div id="cy" style="width: 100%; height: 400px; border:1px solid #ccc;"></div>
-  </section>
+    <!-- 医学影像知识图谱 -->
+    <section id="knowledge-graph" class="section">
+        <div class="container">
+            <h2 class="section-title">磁共振成像知识图谱</h2>
+            <div class="graph-container">
+                <div class="graph-controls">
+                    <button id="graph-reset" class="graph-btn">重置视图</button>
+                    <button id="graph-zoom-in" class="graph-btn">放大</button>
+                    <button id="graph-zoom-out" class="graph-btn">缩小</button>
+                </div>
+                <div id="mri-knowledge-graph"></div>
+                <div class="graph-legend">
+                    <h4>图例说明</h4>
+                    <div class="legend-item">
+                        <span class="legend-color imaging"></span>
+                        <span>成像技术</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color anatomy"></span>
+                        <span>解剖结构</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color pathology"></span>
+                        <span>病理表现</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color clinical"></span>
+                        <span>临床应用</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- 联系我 -->
-  <section id="contact">
-    <h2>联系我</h2>
-    <p>Email: jiafen@example.com</p>
-  </section>
+    <!-- 联系方式 -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>如果您对我的研究或项目感兴趣，欢迎与我联系！</p>
+                    <div class="contact-item">
+                        <strong>电话：</strong>15128991361
+                    </div>
+                    <div class="contact-item">
+                        <strong>邮箱：</strong>15128991361@163.com
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="留言内容" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
-  <script src="script.js"></script>
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 刘于涵 - 个人学术主页</p>
+        </div>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
