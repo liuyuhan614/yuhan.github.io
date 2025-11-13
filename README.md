@@ -22,7 +22,7 @@
 
 1. 将项目文件上传至GitHub仓库
 2. 启用GitHub Pages功能
-3. 访问 `https://[用户名].github.io/[仓库名]` 查看主页
+3. 访问 `https://liuyuhan614.github.io/yuhan.github.io/` 查看主页
 
 ## 技术栈
 
