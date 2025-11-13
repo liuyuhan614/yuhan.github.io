@@ -7,7 +7,7 @@
 - `index.html` - 主页面文件
 - `style.css` - 样式文件
 - `script.js` - 交互脚本
-- `photo.jpg` - 个人照片（请自行添加）
+- `me.jpg` - 个人照片
 - `README.md` - 项目说明
 
 ## 功能特点
